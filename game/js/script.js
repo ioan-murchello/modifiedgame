@@ -1,20 +1,20 @@
-function testWebP(callback) {
+// function testWebP(callback) {
 
-    var webP = new Image();
-    webP.onload = webP.onerror = function () {
-    callback(webP.height == 2);
-    };
-    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-    }
+//     var webP = new Image();
+//     webP.onload = webP.onerror = function () {
+//     callback(webP.height == 2);
+//     };
+//     webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+//     }
     
-    testWebP(function (support) {
+//     testWebP(function (support) {
     
-    if (support == true) {
-    document.querySelector('body').classList.add('webp');
-    }else{
-    document.querySelector('body').classList.add('no-webp');
-    }
-    });
+//     if (support == true) {
+//     document.querySelector('body').classList.add('webp');
+//     }else{
+//     document.querySelector('body').classList.add('no-webp');
+//     }
+//     });
 
 // game____________________________________
 
@@ -30,7 +30,9 @@ function testWebP(callback) {
     let second_player_current_sum = 0;
     let summer = 0;
     let playground_wrapper = document.querySelectorAll('.playground_wrapper');
+
     let inner_game_wrapper = document.querySelectorAll('.inner_game_wrapper');
+
     let playerss = document.querySelectorAll('.blocks_style');
     let cards_sum = document.querySelectorAll('.sum');
     let cardsss = document.querySelectorAll('.card_body');
@@ -57,8 +59,7 @@ function testWebP(callback) {
     let sum_of_cards = document.querySelector('.game_cards');
     let start_btn = document.querySelector('.btn');
     
-    let arr = ['airplane','airplane','baseball','baseball','education','education','fork','fork'];
-    
+   
      game.addEventListener('click', (event) => {
         let target = event.target;
     
